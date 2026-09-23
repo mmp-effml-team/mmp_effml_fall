@@ -40,7 +40,7 @@
 | 8 сентября | Семинар 01 | Введение в CUDA | [Ноутбук](./Seminars/01-GPU/01-cuda.ipynb) | ¯\\\_(ツ)\_/¯ |
 | 15 сентября | Лекция 02 | Understanding GPU Performance | [Презентация](./Seminars/02-GPU-Performance/02-gpu-performance.pdf) | ¯\\\_(ツ)\_/¯ |
 | 15 сентября | Семинар 02 | Профилирование в PyTorch | [Ноутбук](./Seminars/02-GPU-Performance/02-profiling/profiling.ipynb) | ¯\\\_(ツ)\_/¯ |
-| 22 сентября | Лекция 03 | Базовые методы ускорения обучения | - |  [Базовые методы ускорения обучения](./Tasks/task2/README.md) |
+| 22 сентября | Лекция 03 | Базовые методы ускорения обучения | [Презентация](./Seminars/03-Efficient-Training-Basics/03-efficient-training-basics.pdf) |  [Базовые методы ускорения обучения](./Tasks/task2/README.md) |
 | 22 сентября | Семинар 03 | Базовые методы ускорения обучения | -  | ¯\\\_(ツ)\_/¯ |
 | 29 сентября | Лекция 04 | Linear Attention | - | Linear and Flash Attention |
 | 29 сентября | Семинар 04 | Linear Attention | - | ¯\\\_(ツ)\_/¯  |
