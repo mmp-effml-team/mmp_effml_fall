@@ -42,8 +42,8 @@
 | 15 сентября | Семинар 02 | Профилирование в PyTorch | [Ноутбук](./Seminars/02-GPU-Performance/02-profiling/profiling.ipynb) | ¯\\\_(ツ)\_/¯ |
 | 22 сентября | Лекция 03 | Базовые методы ускорения обучения | [Презентация](./Seminars/03-Efficient-Training-Basics/03-efficient-training-basics.pdf) |  [Базовые методы ускорения обучения](./Tasks/task2/README.md) |
 | 22 сентября | Семинар 03 | Базовые методы ускорения обучения | -  | ¯\\\_(ツ)\_/¯ |
-| 29 сентября | Лекция 04 | Linear Attention | - | Linear and Flash Attention |
-| 29 сентября | Семинар 04 | Linear Attention | - | ¯\\\_(ツ)\_/¯  |
+| 29 сентября | Лекция 04 | Linear Attention | [Презентация](./Seminars/04-Linear-Attention/04-linear-attention.pdf), [Конспект](./Seminars/04-Linear-Attention/04-linear-attention-notes.pdf), [Справочник по архитектурам](./Seminars/04-Linear-Attention/04-architecture-reference.pdf) | [Ёмкость слоя линейного внимания](./Tasks/task3/assignment.pdf) |
+| 29 сентября | Семинар 04 | Linear Attention | [Ноутбук](./Seminars/04-Linear-Attention/04-linear-attention.ipynb), [Решения](./Seminars/04-Linear-Attention/04-linear-attention-solutions.ipynb) | ¯\\\_(ツ)\_/¯  |
 | 6 октября | Лекция 05 | Квантизация и спарсификация | - | ¯\\\_(ツ)\_/¯  |
 | 6 октября | Семинар 05 | High Level GPU Frameworks | - | ¯\\\_(ツ)\_/¯  |
 | 13 октября | Лекция 06 | Дистилляция и спекулятивный декодинг | - | Методы сжатия нейронных сетей |
