@@ -46,7 +46,7 @@
 | 29 сентября | Семинар 04 | Linear Attention | [Ноутбук](./Seminars/04-Linear-Attention/04-linear-attention.ipynb), [Решения](./Seminars/04-Linear-Attention/04-linear-attention-solutions.ipynb) | ¯\\\_(ツ)\_/¯  |
 | 6 октября | Лекция 05 | Квантизация и спарсификация | [Презентация](./Seminars/05-Quantization/05-quantization.pdf) | ¯\\\_(ツ)\_/¯  |
 | 6 октября | Семинар 05 | Triton Introduction | [Ноутбук](./Seminars/05-Quantization/05-triton.ipynb) | ¯\\\_(ツ)\_/¯  |
-| 13 октября | Лекция 06 | Дистилляция и спекулятивный декодинг | [Конспект](./Seminars/06-SpecDec-Distill/06-specdec-distill.pdf) | Методы сжатия нейронных сетей |
+| 13 октября | Лекция 06 | Дистилляция и спекулятивный декодинг | [Конспект](./Seminars/06-SpecDec-Distill/06-specdec-distill.pdf) | []Методы ускорения инференса и сжатия сетей][./Tasks/task4] |
 | 20 октября | Лекция 07 | Inference Challenges | - | ¯\\\_(ツ)\_/¯  |
 | 20 октября | Семинар 07 | Библиотеки для ускорения инференса | - | ¯\\\_(ツ)\_/¯  |
 | 27 октября | Лекция 08 | Работа с большими моделями на одной GPU | - | Работа с большими моделями на одной GPU  |
