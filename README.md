@@ -49,8 +49,8 @@
 | 13 октября | Лекция 06 | Дистилляция и спекулятивный декодинг | [Конспект](./Seminars/06-SpecDec-Distill/06-specdec-distill.pdf) | [Методы ускорения инференса и сжатия сетей](./Tasks/task4) |
 | 20 октября | Лекция 07 | Системная оптимизация инференса LLM | [Ноутбук](./Seminars/07-Batching-And-Inference/07-inference-and-batching.ipynb) | ¯\\\_(ツ)\_/¯  |
 | 20 октября | Семинар 07 | Библиотеки для ускорения инференса | [Ноутбук](./Seminars/07-Batching-And-Inference/07-inference-frameworks.ipynb) | ¯\\\_(ツ)\_/¯  |
-| 27 октября | Лекция 08 | Работа с большими моделями на одной GPU | - | Работа с большими моделями на одной GPU  |
-| 27 октября | Семинар 08 | Граф вычислений с точки зрения эффективности | - | ¯\\\_(ツ)\_/¯  |
+| 27 октября | Лекция 08 | Работа с большими моделями на одной GPU | [Презентация](./Seminars/08-Large-Models/08-large-models.pdf) | [Работа с большими моделями на одной GPU](./Tasks/task5/task5.ipynb)  |
+| 27 октября | Семинар 08 | Граф вычислений с точки зрения эффективности | [Часть 1](./Seminars/08-Large-Models/08-optimizers_memory.ipynb), [Часть 2](./Seminars/08-Large-Models/08-cuda_streams.ipynb), [Часть 3](./Seminars/08-Large-Models/08-autograd_function.ipynb) | ¯\\\_(ツ)\_/¯  |
 | 3 ноября | Лекция 09 | Операция All-Reduce, DDP | - | ¯\\\_(ツ)\_/¯ |
 | 3 ноября | Семинар 09 | Основы torch.distributed | - | - |
 | 10 ноября | Лекция 10 | Fully Sharded Data Parallel | - | ¯\\\_(ツ)\_/¯  |
