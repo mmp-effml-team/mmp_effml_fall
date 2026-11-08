@@ -1,0 +1,24 @@
+# Tiny random-init model for context parallel: 8 heads (Ulysses needs cp | n_heads), seq_len divisible by
+# cp = 2, 4, 8. Synthetic data, no downloads; tests/test_parallel.py uses it.
+#   torchrun --nproc_per_node=4 -m mtf.train --config configs/debug_cp.toml --parallel.cp=4 --parallel.cp_attn=ring
+
+[model.args]
+vocab_size = 512
+dim = 128
+n_layers = 2
+n_heads = 8
+n_kv_heads = 8
+ffn_dim = 384
+
+[data]
+source = "synthetic"
+seq_len = 256
+
+[train]
+device = "cpu"
+steps = 50
+micro_batch = 8
+global_batch = 16
+lr = 3e-3
+warmup = 5
+run_dir = "runs/debug_cp"
