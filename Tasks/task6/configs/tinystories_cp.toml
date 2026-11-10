@@ -1,0 +1,29 @@
+# The reference run: a small random-init model (~16M params, 8 heads) on pre-tokenized TinyStories
+# (data/tinystories.bin, SmolLM2 tokenizer), CPU, fp32. One process gives reference/tinystories_1proc.jsonl;
+# every CP layout must follow it step by step.
+#   python -m mtf.train --config configs/tinystories_cp.toml
+#   torchrun --nproc_per_node=4 -m mtf.train --config configs/tinystories_cp.toml --parallel.cp=4 --parallel.cp_attn=ring
+
+[model.args]
+vocab_size = 49152
+dim = 256
+n_layers = 4
+n_heads = 8
+n_kv_heads = 8
+ffn_dim = 768
+tie_embeddings = true
+
+[data]
+source = "file"
+path = "data/tinystories.bin"
+seq_len = 1024
+
+[train]
+device = "cpu"
+steps = 100
+micro_batch = 4
+global_batch = 8
+lr = 1e-3
+warmup = 10
+log_every = 10
+run_dir = "runs/tinystories"

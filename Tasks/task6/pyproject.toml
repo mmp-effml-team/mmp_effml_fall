@@ -1,0 +1,33 @@
+[project]
+name = "mtf"
+version = "0.0.1"
+description = "Minimal DTensor-native LLM training framework: homework on context parallelism"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.15",  # exact version pinned in uv.lock
+    "safetensors",
+    "huggingface_hub",
+]
+
+[project.optional-dependencies]
+hf = ["transformers", "datasets"]  # tokenizers + HF datasets for real-data training
+
+[dependency-groups]
+dev = ["pytest", "transformers", "datasets"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mtf"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "part1: CP data processing + all-gather attention",
+    "part2: ring attention",
+    "part3: all-to-all from P2P ops",
+    "part4: Ulysses attention",
+]
