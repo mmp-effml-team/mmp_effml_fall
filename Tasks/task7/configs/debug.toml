@@ -1,0 +1,22 @@
+# Tiny random-init model on synthetic data: no downloads, seconds on a laptop (CPU, MPS or GPU).
+#   python -m mtf.train --config configs/debug.toml
+
+[model.args]
+vocab_size = 512
+dim = 128
+n_layers = 4
+n_heads = 4
+n_kv_heads = 2
+ffn_dim = 384
+
+[data]
+source = "synthetic"
+seq_len = 128
+
+[train]
+steps = 50
+micro_batch = 8
+global_batch = 16
+lr = 3e-3
+warmup = 5
+run_dir = "runs/debug"
