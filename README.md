@@ -55,7 +55,7 @@
 | 3 ноября | Семинар 09 | Основы torch.distributed | - | - |
 | 10 ноября | Лекция 10 | Fully Sharded Data Parallel | - | ¯\\\_(ツ)\_/¯  |
 | 10 ноября | Семинар  10 | All-Reduce на torch.distributed | - | [Context Parallelism](./Tasks/task6/README.md)  |
-| 17 ноября | Лекция 11 | GPU Clusters | - | FSDP from scratch  |
+| 17 ноября | Лекция 11 | GPU Clusters | - | [FSDP from scratch](./Tasks/task7/README.md)  |
 | 24 ноября | Лекция 12 | Другие виды параллелизма: Tensor & Sequence Parallelism, MoE | - | ¯\\\_(ツ)\_/¯  |
 | 24 ноября | Семинар 12 | DTensor, Tensor Parallel | - | ¯\\\_(ツ)\_/¯  |
 | 1 декабря | Лекция 13 | AutoML | - | ¯\\\_(ツ)\_/¯  |

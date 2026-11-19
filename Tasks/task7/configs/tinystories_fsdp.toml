@@ -1,0 +1,31 @@
+# The comparison run (part 3): a random-init model of ~50M params on pre-tokenized TinyStories
+# (data/tinystories.bin, SmolLM2 tokenizer), CPU, fp32. Half of the parameters are in the embedding (tied with the
+# output head, so both live in the root unit), half in 8 blocks. One process gives
+# reference/tinystories_fsdp_1proc.jsonl; FSDP2 and your FSDP must follow it step by step.
+# micro_batch = 1 on every layout: activations per process are the same, only sharding changes the memory.
+#   python -m mtf.train --config configs/tinystories_fsdp.toml
+#   torchrun --nproc_per_node=4 -m mtf.train --config configs/tinystories_fsdp.toml --parallel.fsdp_impl=mine
+
+[model.args]
+vocab_size = 49152
+dim = 512
+n_layers = 8
+n_heads = 8
+n_kv_heads = 4
+ffn_dim = 1536
+tie_embeddings = true
+
+[data]
+source = "file"
+path = "data/tinystories.bin"
+seq_len = 512
+
+[train]
+device = "cpu"
+steps = 50
+micro_batch = 1
+global_batch = 8
+lr = 1e-3
+warmup = 10
+log_every = 10
+run_dir = "runs/tinystories_fsdp"
